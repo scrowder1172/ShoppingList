@@ -11,6 +11,7 @@
 		5258B2332B740E0F00B6B5A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258B2322B740E0F00B6B5A3 /* ContentView.swift */; };
 		5258B2352B740E1000B6B5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5258B2342B740E1000B6B5A3 /* Assets.xcassets */; };
 		5258B2382B740E1000B6B5A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5258B2372B740E1000B6B5A3 /* Preview Assets.xcassets */; };
+		5258B23F2B741B1100B6B5A3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5258B23E2B741B1100B6B5A3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5258B2322B740E0F00B6B5A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5258B2342B740E1000B6B5A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5258B2372B740E1000B6B5A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5258B23E2B741B1100B6B5A3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				5258B2322B740E0F00B6B5A3 /* ContentView.swift */,
 				5258B2342B740E1000B6B5A3 /* Assets.xcassets */,
 				5258B2362B740E1000B6B5A3 /* Preview Content */,
+				5258B23E2B741B1100B6B5A3 /* Launch Screen.storyboard */,
 			);
 			path = ShoppingList;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5258B23F2B741B1100B6B5A3 /* Launch Screen.storyboard in Resources */,
 				5258B2382B740E1000B6B5A3 /* Preview Assets.xcassets in Resources */,
 				5258B2352B740E1000B6B5A3 /* Assets.xcassets in Resources */,
 			);
