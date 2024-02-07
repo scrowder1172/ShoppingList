@@ -14,6 +14,7 @@
 		5258B23F2B741B1100B6B5A3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5258B23E2B741B1100B6B5A3 /* Launch Screen.storyboard */; };
 		5258B2412B741BB600B6B5A3 /* StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258B2402B741BB600B6B5A3 /* StoresView.swift */; };
 		52C256282B741CB700D67317 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C256272B741CB700D67317 /* ItemsView.swift */; };
+		52C2562A2B741E9D00D67317 /* Stores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C256292B741E9D00D67317 /* Stores.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5258B23E2B741B1100B6B5A3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5258B2402B741BB600B6B5A3 /* StoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresView.swift; sourceTree = "<group>"; };
 		52C256272B741CB700D67317 /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		52C256292B741E9D00D67317 /* Stores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stores.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				5258B2322B740E0F00B6B5A3 /* ContentView.swift */,
 				5258B2402B741BB600B6B5A3 /* StoresView.swift */,
 				52C256272B741CB700D67317 /* ItemsView.swift */,
+				52C256292B741E9D00D67317 /* Stores.swift */,
 				5258B2342B740E1000B6B5A3 /* Assets.xcassets */,
 				5258B2362B740E1000B6B5A3 /* Preview Content */,
 				5258B23E2B741B1100B6B5A3 /* Launch Screen.storyboard */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C2562A2B741E9D00D67317 /* Stores.swift in Sources */,
 				5258B2412B741BB600B6B5A3 /* StoresView.swift in Sources */,
 				5258B2332B740E0F00B6B5A3 /* ContentView.swift in Sources */,
 				5258B2312B740E0F00B6B5A3 /* ShoppingListApp.swift in Sources */,
