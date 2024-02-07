@@ -13,6 +13,8 @@ struct StoresView: View {
     @Environment(\.modelContext) var modelContext
     @Query var stores: [Stores]
     
+    @State private var isShowingAddStore: Bool = false
+    
     var body: some View {
         NavigationStack {
             List {
@@ -29,9 +31,12 @@ struct StoresView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Add Store", systemImage: "plus") {
-                        
+                        isShowingAddStore = true
                     }
                 }
+            }
+            .sheet(isPresented: $isShowingAddStore) {
+                AddStoreView()
             }
         }
     }
