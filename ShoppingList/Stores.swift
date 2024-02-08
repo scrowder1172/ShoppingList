@@ -16,13 +16,15 @@ final class Stores {
     var address: String
     var dateAdded: Date
     var dateLastUpdate: Date
+    var isFavorite: Bool
     
-    init(storeName: String, storeDescription: String, address: String) {
+    init(storeName: String, storeDescription: String, address: String, isFavorite: Bool = false) {
         self.id = UUID()
         self.storeName = storeName
         self.storeDescription = storeDescription
         self.address = address
         self.dateAdded = Date()
         self.dateLastUpdate = Date()
+        self.isFavorite = isFavorite
     }
 }
