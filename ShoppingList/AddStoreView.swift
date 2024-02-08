@@ -16,12 +16,15 @@ struct AddStoreView: View {
     @State private var storeName: String = ""
     @State private var storeDescription: String = ""
     @State private var storeAddress: String = ""
+    @State private var isFavorite: Bool = false
     
     var body: some View {
         NavigationStack {
             Form {
                 VStack(alignment: .leading) {
                     TextField("Store", text: $storeName)
+                        .textContentType(.organizationName)
+                        .textInputAutocapitalization(.words)
                     Text("Required")
                         .font(.caption)
                         .foregroundStyle(.red)
@@ -30,26 +33,38 @@ struct AddStoreView: View {
                 TextField("Description", text: $storeDescription, axis: .vertical)
                 
                 TextField("Address", text: $storeAddress)
+                    .textContentType(.fullStreetAddress)
                 
-                Button("Save") {
-                    addStore()
-                }
+                Toggle("Favorite", isOn: $isFavorite)
             }
             .navigationTitle("Add Store")
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Cancel") {
+                        dismiss()
+                    }
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Save") {
+                        addStore()
+                        dismiss()
+                    }
+                }
+            }
         }
     }
     
     func addStore() {
         guard storeName.isEmpty == false else { return }
         
-        let store: Stores = Stores(storeName: storeName, storeDescription: storeDescription, address: storeAddress)
+        let store: Stores = Stores(storeName: storeName, storeDescription: storeDescription, address: storeAddress, isFavorite: isFavorite)
         modelContext.insert(store)
-        
-        dismiss()
         
     }
 }
 
 #Preview {
     AddStoreView()
+        .modelContainer(for: Stores.self)
 }
